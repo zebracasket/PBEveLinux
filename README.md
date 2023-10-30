@@ -46,9 +46,6 @@ ansible-playbook -K playbook.yaml
 
 You will be prompted for your `sudo` password (so Ansible can do actions as `root` where needed)
 
-Let ansible do its thing
-
-
 ## Note about Pipewire
 
 The audio drivers WILL NOT work with pipewire. They will give sound but its mostly slow playing and covered by white noise (you can try it if you like to see what im talking about) For this reason we must replace pipewire with pulseaudio. Of note, HDMI/DP Out is not working on Ubuntu 22.10 or later nor is it working under fedora systems but it does work with Ubuntu 22.04 and Linux Mint. (Those OSes have pulseaudio natively installed and maybe their configurations allow for HDMI/DP out to work but at this point I have not figured out how to get it working on newer versions where pulseaudio needs installation. I have also tried it under Arch. HDMI/DP does not work even with Pulseaudio natively installed.
